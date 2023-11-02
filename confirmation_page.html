@@ -13,6 +13,8 @@
   <body>
   <script>
 
+let time = Date.now();
+let order_ref = "diya_test_"+time;
     /*** Do not change ***/
 var AWIN = {};
 AWIN.Tracking = {};
@@ -20,16 +22,19 @@ AWIN.Tracking.Sale = {};
 /*** Set your transaction parameters ***/
 AWIN.Tracking.Sale.amount = "20";
 AWIN.Tracking.Sale.channel = "aw";
-AWIN.Tracking.Sale.orderRef = "oct_test_3";
+AWIN.Tracking.Sale.orderRef = order_ref;
 AWIN.Tracking.Sale.parts = "DEFAULT:20";
 AWIN.Tracking.Sale.voucher = "";
 AWIN.Tracking.Sale.currency = "GBP";
 AWIN.Tracking.Sale.test = "0";
 
+var img = document.createElement('img');
+img.src = "https://www.awin1.com/sread.img?tt=ns&tv=2&merchant=55897&amount=20&ch=aw&parts=DEFAULT:20&vc=&cr=GBP&ref="+order_ref+"&testmode=0";
+document.body.appendChild(img);
   </script> 
 
 <script src="https://www.dwin1.com/55897.js" type="text/javascript" defer="defer"></script>
-<img src="https://www.awin1.com/sread.img?tt=ns&tv=2&merchant=55897&amount=20&ch=aw&parts=DEFAULT:20&vc=&cr=GBP&ref=oct_test_3&testmode=0">   
+
 <h1>Order confirmed</h1>
     <h2>order reference - </h2>
   </body>
